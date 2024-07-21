@@ -4,7 +4,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Dive Sites - Bhaccasyoniztas Beach Resort Website Template</title>
+	<title>Rooms - Travlr Getaways Website Template</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -18,21 +18,25 @@
 						<div class="body">
 							<h1>Rooms</h1>
 							<ul id="rooms">
+
 								{{#each rooms}}
+
 								<li>
-									<a href="/rooms"><img src="images/{{this.image}}" alt="Img"></a>
-									<h2><a href="/rooms">{{this.name}}</a></h2>
-									{{{this.description}}}
+									<a href=“/rooms"><img src="images/{{this.image}}" alt="Img"></a>
+									<h2><a href=“/rooms">{{this.name}}</a></h2>
+									{{{this.desciption}}}
 									<span class="rate">Rate: {{this.rate}}</span>
 								</li>
+
 								{{/each}}
+
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		{{> footer}}
+		{{>footer}}
 	</div>
 </body>
 
